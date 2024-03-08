@@ -1,0 +1,9 @@
+// This is a comment
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+banana / orange
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+false / orange
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
